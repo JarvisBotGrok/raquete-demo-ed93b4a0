@@ -1,0 +1,53 @@
+/*
+Theme Name: Raquete Child (RASCUNHO)
+Template: twentytwentyfive
+Description: Child theme do site de apresentação do Projeto Raquete para Todos. RASCUNHO — sistema visual IRIS-01 (proposta).
+Version: 0.2.0
+License: GNU General Public License v2 or later
+Text Domain: raquete-child
+*/
+.rq-draft{background:#12355B;color:#F2C230;text-align:center;font:600 13px/1.4 Inter,sans-serif;padding:6px 12px}
+.rq-header{position:sticky;top:0;z-index:50;box-shadow:0 1px 0 rgba(18,53,91,.12)}
+.rq-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:#12355B}
+.rq-logo span{display:flex;flex-direction:column;line-height:1.1}
+.rq-logo strong{font:800 19px Montserrat,sans-serif}
+.rq-logo small{font:600 12px Inter,sans-serif;color:#0B6E4F;letter-spacing:.04em}
+.rq-nav a{color:#12355B;font-weight:600;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+.rq-nav a:hover{color:#0B6E4F;text-decoration:underline}
+.rq-nav-cta>a{background:#F2C230;border-radius:12px;padding:0 16px!important}
+.rq-nav-cta>a:hover{text-decoration:none}
+.wp-block-navigation__responsive-container-open,.wp-block-navigation__responsive-container-close{min-width:44px;min-height:44px;justify-content:center}
+.wp-block-navigation__responsive-container.is-menu-open{padding:24px}
+:focus-visible{outline:3px solid #F2C230;outline-offset:2px}
+.wp-block-button__link{min-height:48px;display:inline-flex;align-items:center}
+.is-style-outline .wp-block-button__link{background:transparent;color:#fff;border:2px solid #fff}
+.rq-hero{background:linear-gradient(135deg,#0B6E4F 0%,#12355B 100%);color:#fff}
+.rq-hero h1,.rq-hero p{color:#fff}
+.rq-hero h1{max-width:18ch}
+.rq-hero-sub{font-size:20px;max-width:60ch;opacity:.95}
+.rq-card{background:#fff;border-radius:12px;box-shadow:0 6px 20px rgba(18,53,91,.08);padding:24px;height:100%}
+.rq-card h3{margin-top:0}
+.rq-ico{display:inline-flex;width:48px;height:48px;border-radius:50%;background:#F7F3EA;align-items:center;justify-content:center;margin-bottom:8px}
+.rq-band{background:#F2C230}
+.rq-band h2,.rq-band p{color:#12355B}
+.rq-band .wp-block-button__link{background:#12355B;color:#fff}
+.rq-fontes{font-size:13px;color:#52606D;border-top:1px solid #E4DED0;padding-top:8px;margin-top:24px}
+.rq-fontes a{color:#52606D}
+.rq-timeline{border-left:4px solid #0B6E4F;padding-left:24px}
+.rq-timeline h3{position:relative}
+.rq-timeline h3::before{content:"";position:absolute;left:-34px;top:.3em;width:16px;height:16px;border-radius:50%;background:#F2C230;border:3px solid #0B6E4F}
+.wp-site-blocks>main{margin-top:0}
+main .entry-content>*:first-child{margin-top:0}
+.wp-block-post-title{display:none}
+@media (max-width:600px){
+  .rq-hero h1 .rq-br{display:block}
+  .rq-hero-sub{font-size:18px}
+  .rq-logo strong{font-size:17px}
+}
+/* v0.2.1 — ajustes pós-captura */
+.wp-site-blocks>*,.entry-content>.alignfull,main .wp-block-post-content>.alignfull{margin-block-start:0!important;margin-block-end:0!important}
+.wp-site-blocks>footer,.wp-site-blocks>.wp-block-template-part{margin-block-start:0!important}
+footer a,.has-azul-background-color a{color:#F2C230}
+footer a:hover{color:#fff}
+.rq-hero h1{max-width:22ch}
+.rq-header .wp-block-navigation{gap:20px}
