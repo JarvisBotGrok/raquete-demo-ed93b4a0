@@ -105,3 +105,5 @@ footer a:hover{color:#fff}
 @media (max-width:900px){.rq-gal{grid-template-columns:repeat(2,minmax(0,1fr))}.rq-why{grid-template-columns:1fr}}
 @media (max-width:600px){.rq-gal{gap:12px}.rq-gal-item{padding:16px}.rpt-timeline .rq-tl-title{font-size:19px}.rq-quotes{grid-template-columns:1fr}}
 .rq-hero .rq-post-title,.rq-posts .wp-block-post-title{display:block}.rq-hero .rq-post-title{color:#fff;max-width:24ch}
+.rq-hero-tag{font:700 22px/1.35 Montserrat,sans-serif;color:#F2C230!important;margin-top:8px}@media (max-width:600px){.rq-hero-tag{font-size:19px}}
+body .rq-hero h1{margin-inline:0}
