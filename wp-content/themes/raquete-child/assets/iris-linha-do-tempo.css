@@ -1,0 +1,9 @@
+.rpt-timeline{position:relative;margin:0;padding:0 0 0 32px;list-style:none}
+.rpt-timeline:before{content:"";position:absolute;left:11px;top:0;bottom:0;width:3px;background:#0B6E4F}
+.rpt-timeline li{position:relative;margin:0 0 32px}
+.rpt-timeline li:before{content:"";position:absolute;left:-29px;top:4px;width:18px;height:18px;border-radius:50%;background:#F2C230;border:3px solid #12355B}
+.rpt-timeline .ano{font:800 1.4rem Montserrat,sans-serif;color:#12355B}
+.rpt-timeline .fonte{font-size:.85rem;color:#1F2933}
+.rpt-impacto{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
+.rpt-impacto .card{background:#F7F3EA;border-radius:12px;padding:24px;border-top:6px solid #0B6E4F}
+@media (prefers-reduced-motion:no-preference){.rpt-impacto .card{transition:transform .2s}.rpt-impacto .card:hover{transform:translateY(-4px)}}
