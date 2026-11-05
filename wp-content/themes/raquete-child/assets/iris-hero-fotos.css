@@ -1,4 +1,4 @@
-/* IRIS-05c — hero: duas fotos no lugar da ilustração da quadra
+/* IRIS-05d — hero: duas fotos no lugar da ilustração da quadra
    (alunos, depois recorte dos adultos em um torneio).
    Carregar depois de style.css e de iris-contraste-faixas.css.
    Não aplicar a animação de .rq-hero-art nestas fotos. */
@@ -45,10 +45,19 @@
   margin-top: 8px;
 }
 
+/* IRIS-05d: no computador (>= 1000px), as duas fotos ficam lado a lado,
+   alinhadas pelo topo, com altura igual e corte central suave. */
 @media (min-width: 1000px) {
   .rq-hero--art .rq-hero-fotos {
-    max-width: 560px;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    max-width: 640px;
     margin: 0;
+  }
+  .rq-hero--art .rq-hero-fotos img {
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center top;
   }
 }
 @media (max-width: 999px) {
