@@ -2,7 +2,7 @@
 Theme Name: Raquete Child (RASCUNHO)
 Template: twentytwentyfive
 Description: Child theme do site de apresentação do Projeto Raquete para Todos. RASCUNHO — sistema visual IRIS-01 (proposta).
-Version: 0.4.2
+Version: 0.4.3
 License: GNU General Public License v2 or later
 Text Domain: raquete-child
 */
@@ -29,7 +29,7 @@ Text Domain: raquete-child
 .rq-card h3{margin-top:0}
 .rq-ico{display:inline-flex;width:48px;height:48px;border-radius:50%;background:#EAF6FB;align-items:center;justify-content:center;margin-bottom:8px}
 .rq-band{background:#FFF200}
-.rq-band h2{color:#3775C4}.rq-band p,.rq-band a,.rq-band li{color:#231F20}
+.rq-band h2{color:#3775C4}.rq-band p,.rq-band li{color:#231F20}.rq-band a:not(.wp-element-button):not(.wp-block-button__link){color:#231F20}.rq-band .wp-block-button__link{color:#FFFFFF!important}
 .rq-band .wp-block-button__link{background:#3775C4;color:#fff}
 .rq-fontes{font-size:13px;color:#4A5560;border-top:1px solid #C5E6F2;padding-top:8px;margin-top:24px}
 .rq-fontes a{color:#4A5560}
@@ -135,10 +135,11 @@ footer .rq-selo{background:#FFF200;color:#231F20}
 .has-areia-background-color h3{color:#231F20}
 
 /* IRIS-04 APPEND (após regras do tema) */
-.rq-band p,.rq-band a,.rq-band li,.rq-band .rq-lead{color:#231F20!important}
-.rq-band a{text-decoration-color:#231F20}
+.rq-band p,.rq-band li,.rq-band .rq-lead{color:#231F20!important}
+.rq-band a:not(.wp-element-button):not(.wp-block-button__link){color:#231F20!important;text-decoration-color:#231F20}
+.rq-band .wp-block-button__link{color:#FFFFFF!important}
 figcaption,.wp-element-caption,.rq-caption{color:#231F20}
 .rq-gal-item figcaption{color:#231F20!important}
 .rq-foto figcaption{color:#231F20}
-footer.has-azul-background-color a,.wp-site-blocks footer a,.has-azul-background-color a{color:#FFFFFF!important}
+footer.has-azul-background-color a,.wp-site-blocks footer a{color:#FFFFFF!important}
 footer.has-grafite-background-color a,.rq-footer-preto a{color:#FFF200}
