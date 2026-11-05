@@ -2,40 +2,40 @@
 Theme Name: Raquete Child (RASCUNHO)
 Template: twentytwentyfive
 Description: Child theme do site de apresentação do Projeto Raquete para Todos. RASCUNHO — sistema visual IRIS-01 (proposta).
-Version: 0.3.0
+Version: 0.4.0
 License: GNU General Public License v2 or later
 Text Domain: raquete-child
 */
-.rq-draft{background:#12355B;color:#F2C230;text-align:center;font:600 13px/1.4 Inter,sans-serif;padding:6px 12px}
-.rq-header{position:sticky;top:0;z-index:50;box-shadow:0 1px 0 rgba(18,53,91,.12)}
-.rq-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:#12355B}
+.rq-draft{background:#231F20;color:#FFF200;text-align:center;font:600 13px/1.4 Inter,sans-serif;padding:6px 12px}
+.rq-header{position:sticky;top:0;z-index:50;box-shadow:0 1px 0 rgba(55,117,196,.12)}
+.rq-logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:#231F20}
 .rq-logo span{display:flex;flex-direction:column;line-height:1.1}
 .rq-logo strong{font:800 19px Montserrat,sans-serif}
-.rq-logo small{font:600 12px Inter,sans-serif;color:#0B6E4F;letter-spacing:.04em}
-.rq-nav a{color:#12355B;font-weight:600;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
-.rq-nav a:hover{color:#0B6E4F;text-decoration:underline}
-.rq-nav-cta>a{background:#F2C230;border-radius:12px;padding:0 16px!important}
+.rq-logo small{font:600 12px Inter,sans-serif;color:#3775C4;letter-spacing:.04em}
+.rq-nav a{color:#3775C4;font-weight:600;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+.rq-nav a:hover{color:#3775C4;text-decoration:underline}
+.rq-nav-cta>a{background:#FFF200;color:#231F20!important;border-radius:12px;padding:0 16px!important}
 .rq-nav-cta>a:hover{text-decoration:none}
 .wp-block-navigation__responsive-container-open,.wp-block-navigation__responsive-container-close{min-width:44px;min-height:44px;justify-content:center}
 .wp-block-navigation__responsive-container.is-menu-open{padding:24px}
-:focus-visible{outline:3px solid #F2C230;outline-offset:2px}
+:focus-visible{outline:3px solid #FFF200;outline-offset:2px}
 .wp-block-button__link{min-height:48px;display:inline-flex;align-items:center}
 .is-style-outline .wp-block-button__link{background:transparent;color:#fff;border:2px solid #fff}
-.rq-hero{background:linear-gradient(135deg,#0B6E4F 0%,#12355B 100%);color:#fff}
+.rq-hero{background:linear-gradient(135deg,#3775C4 0%,#2A5FA3 100%);color:#fff}
 .rq-hero h1,.rq-hero p{color:#fff}
 .rq-hero h1{max-width:18ch}
 .rq-hero-sub{font-size:20px;max-width:60ch;opacity:.95}
-.rq-card{background:#fff;border-radius:12px;box-shadow:0 6px 20px rgba(18,53,91,.08);padding:24px;height:100%}
+.rq-card{background:#fff;border-radius:12px;box-shadow:0 6px 20px rgba(55,117,196,.08);padding:24px;height:100%}
 .rq-card h3{margin-top:0}
-.rq-ico{display:inline-flex;width:48px;height:48px;border-radius:50%;background:#F7F3EA;align-items:center;justify-content:center;margin-bottom:8px}
-.rq-band{background:#F2C230}
-.rq-band h2,.rq-band p{color:#12355B}
-.rq-band .wp-block-button__link{background:#12355B;color:#fff}
-.rq-fontes{font-size:13px;color:#52606D;border-top:1px solid #E4DED0;padding-top:8px;margin-top:24px}
-.rq-fontes a{color:#52606D}
-.rq-timeline{border-left:4px solid #0B6E4F;padding-left:24px}
+.rq-ico{display:inline-flex;width:48px;height:48px;border-radius:50%;background:#EAF6FB;align-items:center;justify-content:center;margin-bottom:8px}
+.rq-band{background:#FFF200}
+.rq-band h2,.rq-band p{color:#3775C4}
+.rq-band .wp-block-button__link{background:#3775C4;color:#fff}
+.rq-fontes{font-size:13px;color:#4A5560;border-top:1px solid #C5E6F2;padding-top:8px;margin-top:24px}
+.rq-fontes a{color:#4A5560}
+.rq-timeline{border-left:4px solid #3775C4;padding-left:24px}
 .rq-timeline h3{position:relative}
-.rq-timeline h3::before{content:"";position:absolute;left:-34px;top:.3em;width:16px;height:16px;border-radius:50%;background:#F2C230;border:3px solid #0B6E4F}
+.rq-timeline h3::before{content:"";position:absolute;left:-34px;top:.3em;width:16px;height:16px;border-radius:50%;background:#FFF200;border:3px solid #3775C4}
 .wp-site-blocks>main{margin-top:0}
 main .entry-content>*:first-child{margin-top:0}
 .wp-block-post-title{display:none}
@@ -47,7 +47,7 @@ main .entry-content>*:first-child{margin-top:0}
 /* v0.2.1 — ajustes pós-captura */
 .wp-site-blocks>*,.entry-content>.alignfull,main .wp-block-post-content>.alignfull{margin-block-start:0!important;margin-block-end:0!important}
 .wp-site-blocks>footer,.wp-site-blocks>.wp-block-template-part{margin-block-start:0!important}
-footer a,.has-azul-background-color a{color:#F2C230}
+footer a,.has-azul-background-color a{color:#FFF200}
 footer a:hover{color:#fff}
 .rq-hero h1{max-width:22ch}
 .rq-header .wp-block-navigation{gap:20px}
@@ -57,34 +57,34 @@ footer a:hover{color:#fff}
 .rpt-timeline .rq-tl-title{margin:4px 0;font-size:22px}
 .rpt-timeline p{margin:0 0 4px}
 .rq-faq{max-width:820px}
-.rq-faq-item{background:#fff;border-radius:12px;box-shadow:0 6px 20px rgba(18,53,91,.08);margin:0 0 12px}
-.rq-faq-item summary{cursor:pointer;min-height:48px;padding:12px 52px 12px 20px;font:700 18px/1.35 Montserrat,sans-serif;color:#12355B;list-style:none;position:relative;display:flex;align-items:center}
+.rq-faq-item{background:#fff;border-radius:12px;box-shadow:0 6px 20px rgba(55,117,196,.08);margin:0 0 12px}
+.rq-faq-item summary{cursor:pointer;min-height:48px;padding:12px 52px 12px 20px;font:700 18px/1.35 Montserrat,sans-serif;color:#3775C4;list-style:none;position:relative;display:flex;align-items:center}
 .rq-faq-item summary::-webkit-details-marker{display:none}
-.rq-faq-item summary::after{content:"+";position:absolute;right:20px;font-size:26px;color:#0B6E4F}
+.rq-faq-item summary::after{content:"+";position:absolute;right:20px;font-size:26px;color:#3775C4}
 .rq-faq-item[open] summary::after{content:"\2013"}
 .rq-faq-item>p{padding:0 20px 16px;margin:0}
-.rq-faq-src{display:block;font-size:13px;color:#52606D;margin-top:6px}.rq-faq-src a{color:#52606D}
+.rq-faq-src{display:block;font-size:13px;color:#4A5560;margin-top:6px}.rq-faq-src a{color:#4A5560}
 .rq-gal{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
-.rq-gal-item{margin:0;background:#F7F3EA;border-radius:12px;padding:24px;text-align:center}
+.rq-gal-item{margin:0;background:#EAF6FB;border-radius:12px;padding:24px;text-align:center}
 .rq-gal-item img{width:100%;max-width:140px;height:auto;aspect-ratio:1;display:block;margin:0 auto}
-.rq-gal-item figcaption{font:600 15px Inter,sans-serif;color:#12355B;margin-top:12px}
+.rq-gal-item figcaption{font:600 15px Inter,sans-serif;color:#3775C4;margin-top:12px}
 .rq-whyband,.rq-whyband h2,.rq-whyband h3,.rq-whyband p{color:#fff}
 .rq-why{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
 .rq-why-card{display:flex;gap:16px;align-items:flex-start;background:rgba(255,255,255,.08);border-radius:12px;padding:20px}
-.rq-why-card img{flex:0 0 44px;background:#F7F3EA;border-radius:50%;padding:8px;box-sizing:content-box}
+.rq-why-card img{flex:0 0 44px;background:#EAF6FB;border-radius:50%;padding:8px;box-sizing:content-box}
 .rq-why h3{margin:0 0 4px;font-size:20px}.rq-why p{margin:0}
 .rq-whyband .rq-fontes,.rq-whyband .rq-fontes a{color:#D9E2EC;border-color:rgba(255,255,255,.2)}
 .rq-map{margin:0;max-width:720px}
-.rq-map img{width:100%;height:auto;border-radius:12px;display:block;border:1px solid #E4DED0}
-.rq-map figcaption{font-size:14px;color:#52606D;margin-top:8px}.rq-map figcaption a{color:#12355B}
+.rq-map img{width:100%;height:auto;border-radius:12px;display:block;border:1px solid #C5E6F2}
+.rq-map figcaption{font-size:14px;color:#4A5560;margin-top:8px}.rq-map figcaption a{color:#3775C4}
 .rq-quotes{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
-.rq-quote{background:#fff;border-radius:12px;border-left:6px solid #0B6E4F;padding:20px;box-shadow:0 6px 20px rgba(18,53,91,.08)}
+.rq-quote{background:#fff;border-radius:12px;border-left:6px solid #3775C4;padding:20px;box-shadow:0 6px 20px rgba(55,117,196,.08)}
 .rq-quote blockquote{margin:0;padding:0;border:0}
-.rq-quote blockquote p{font:400 17px/1.5 Inter,sans-serif;font-style:normal;color:#1F2933;margin:0}
-.rq-quote-meta{font-size:14px;color:#52606D;margin:12px 0 0}.rq-quote-meta a{color:#0B6E4F;font-weight:600}
+.rq-quote blockquote p{font:400 17px/1.5 Inter,sans-serif;font-style:normal;color:#231F20;margin:0}
+.rq-quote-meta{font-size:14px;color:#4A5560;margin:12px 0 0}.rq-quote-meta a{color:#3775C4;font-weight:600}
 .rq-div{line-height:0;padding:8px 0;background:#fff}.rq-div img{width:100%;height:24px;display:block}
-.rq-aviso{background:#F7F3EA;border-left:6px solid #F2C230;padding:16px 20px;border-radius:8px}
-.rq-selo{display:inline-block;background:#F2C230;color:#12355B;font-weight:600;border-radius:8px;padding:2px 10px;margin-right:8px}
+.rq-aviso{background:#EAF6FB;border-left:6px solid #FFF200;padding:16px 20px;border-radius:8px}
+.rq-selo{display:inline-block;background:#FFF200;color:#3775C4;font-weight:600;border-radius:8px;padding:2px 10px;margin-right:8px}
 .rq-hero--art>.alignwide{position:relative}
 .rq-hero-art{display:block;width:100%;max-width:1200px;margin:0 auto;height:auto;border-radius:12px}
 @media (min-width:1000px){.rq-hero--art{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:center;padding-left:max(24px,calc((100% - 1200px)/2));padding-right:max(24px,calc((100% - 1200px)/2))}
@@ -94,16 +94,32 @@ footer a:hover{color:#fff}
 @media (prefers-reduced-motion:no-preference){
  .rq-hero-art{animation:rq-float 6s ease-in-out infinite}
  .rq-card,.rq-why-card,.rq-quote,.rq-gal-item{transition:transform .2s ease,box-shadow .2s ease}
- .rq-card:hover,.rq-quote:hover,.rq-gal-item:hover{transform:translateY(-4px);box-shadow:0 10px 26px rgba(18,53,91,.14)}
+ .rq-card:hover,.rq-quote:hover,.rq-gal-item:hover{transform:translateY(-4px);box-shadow:0 10px 26px rgba(55,117,196,.14)}
  .rq-why-card:hover{transform:translateY(-4px)}
 }
 @keyframes rq-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
-.rq-posts .wp-block-post-title a{color:#12355B;text-decoration:none}.rq-posts .wp-block-post-title a:hover{text-decoration:underline}
-.rq-posts .wp-block-post-excerpt__more-link{font-weight:600;color:#0B6E4F}
-.rq-kicker a{color:#F2C230;font-weight:600}
+.rq-posts .wp-block-post-title a{color:#3775C4;text-decoration:none}.rq-posts .wp-block-post-title a:hover{text-decoration:underline}
+.rq-posts .wp-block-post-excerpt__more-link{font-weight:600;color:#3775C4}
+.rq-kicker a{color:#FFF200;font-weight:600}
 .rq-article h2{font-size:26px;margin-top:40px}
 @media (max-width:900px){.rq-gal{grid-template-columns:repeat(2,minmax(0,1fr))}.rq-why{grid-template-columns:1fr}}
 @media (max-width:600px){.rq-gal{gap:12px}.rq-gal-item{padding:16px}.rpt-timeline .rq-tl-title{font-size:19px}.rq-quotes{grid-template-columns:1fr}}
 .rq-hero .rq-post-title,.rq-posts .wp-block-post-title{display:block}.rq-hero .rq-post-title{color:#fff;max-width:24ch}
-.rq-hero-tag{font:700 22px/1.35 Montserrat,sans-serif;color:#F2C230!important;margin-top:8px}@media (max-width:600px){.rq-hero-tag{font-size:19px}}
+.rq-hero-tag{font:700 22px/1.35 Montserrat,sans-serif;color:#FFF200!important;margin-top:8px}@media (max-width:600px){.rq-hero-tag{font-size:19px}}
 body .rq-hero h1{margin-inline:0}
+
+.rq-logo img{display:block;width:56px;height:56px;object-fit:contain}
+.rq-logo span{display:flex;flex-direction:column;line-height:1.15}
+.rq-logo strong{font:800 16px/1.2 Montserrat,sans-serif;color:#231F20}
+.rq-logo small{font:600 12px Inter,sans-serif;color:#3775C4;letter-spacing:.04em}
+.rq-foto{margin:0;max-width:720px}
+.rq-foto img{width:100%;height:auto;border-radius:12px;display:block}
+.rq-foto figcaption{font:600 15px/1.4 Inter,sans-serif;color:#231F20;margin-top:12px}
+.rq-band-claro{background:#70CAE4;color:#231F20}
+.rq-band-claro h2,.rq-band-claro p{color:#231F20}
+.has-azul-claro-background-color{background-color:#70CAE4!important;color:#231F20}
+.has-azul-claro-background-color h1,.has-azul-claro-background-color h2,.has-azul-claro-background-color h3,.has-azul-claro-background-color p{color:#231F20}
+.wp-block-button__link{color:#231F20}
+.is-style-fill .wp-block-button__link{background:#FFF200;color:#231F20}
+.rq-cta-azul .wp-block-button__link,.rq-band .wp-block-button__link{background:#3775C4;color:#fff}
+footer .rq-selo{background:#FFF200;color:#231F20}
