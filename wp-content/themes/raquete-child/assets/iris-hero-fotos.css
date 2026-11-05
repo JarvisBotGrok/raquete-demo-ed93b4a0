@@ -1,7 +1,7 @@
-/* IRIS-05b — hero: foto do professor com Gustavo Kuerten no lugar da ilustração da quadra.
-   A foto com alunos permanece fora enquanto o bloqueio de imagem de menores valer.
+/* IRIS-05c — hero: duas fotos no lugar da ilustração da quadra
+   (alunos, depois recorte dos adultos em um torneio).
    Carregar depois de style.css e de iris-contraste-faixas.css.
-   Não aplicar a animação de .rq-hero-art nesta foto. */
+   Não aplicar a animação de .rq-hero-art nestas fotos. */
 
 .rq-hero h1 {
   font-size: clamp(1.75rem, 6.4vw + 0.4rem, 3rem);
@@ -13,6 +13,13 @@
 }
 @media (max-width: 480px) {
   .rq-hero h1 { font-size: 1.75rem; }
+}
+
+/* Parágrafo oficial no hero: branco pleno sobre #3775C4 (4,66:1).
+   A opacidade 0,95 de .rq-hero-sub deixava a razão em 4,38:1. */
+.rq-hero-sub {
+  opacity: 1;
+  color: #FFFFFF;
 }
 
 .rq-hero-fotos {
