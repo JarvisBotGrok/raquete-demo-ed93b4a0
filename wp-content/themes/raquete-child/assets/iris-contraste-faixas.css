@@ -1,16 +1,23 @@
-/* IRIS-04 — correção de contraste (BASTION, item médio) */
+/* IRIS-04 — correção de contraste (BASTION)
+   Texto corrido/links comuns sobre amarelo ou #EAF6FB: preto #231F20.
+   Botões da faixa amarela: texto branco sobre fundo #3775C4 (4,66:1).
+   Não pintar <a class="wp-block-button__link"> de preto. */
 .rq-band p,
 .rq-band li,
 .rq-band .rq-lead { color: #231F20; }
-.rq-band a:not(.wp-element-button):not(.wp-block-button__link) { color: #231F20 !important; text-decoration-color: #231F20; }
-.rq-band .wp-block-button__link { color: #FFFFFF !important; }
+.rq-band a:not(.wp-element-button):not(.wp-block-button__link) {
+  color: #231F20 !important;
+  text-decoration-color: #231F20;
+}
+.rq-band .wp-block-button__link,
+.rq-band .wp-element-button {
+  color: #FFFFFF !important;
+}
 figcaption,
 .wp-element-caption,
-.rq-caption { color: #231F20; }
-.rq-gal-item figcaption { color: #231F20 !important; }
+.rq-caption,
+.rq-gal-item figcaption { color: #231F20; }
 .site-footer.rq-footer-azul a,
 footer.has-azul-background-color a,
-.wp-site-blocks footer a { color: #FFFFFF !important; }
-.site-footer.rq-footer-preto a,
-footer.has-grafite-background-color a,
-.rq-footer-preto a { color: #FFF200; }
+.wp-site-blocks footer a { color: #FFFFFF; }
+.site-footer.rq-footer-preto a { color: #FFF200; }
