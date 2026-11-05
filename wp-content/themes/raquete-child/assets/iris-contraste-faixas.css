@@ -1,0 +1,21 @@
+/* IRIS-04 — correção de contraste (BASTION, item médio)
+   Azul #3775C4 sobre amarelo #FFF200 = 3,99:1 (só título grande).
+   Azul #3775C4 sobre #EAF6FB = 4,23:1 (abaixo de 4,5:1).
+   Texto corrido e links nesses fundos: preto #231F20. */
+.rq-band p,
+.rq-band a,
+.rq-band li,
+.rq-band .rq-lead { color: #231F20; }
+.rq-band a { text-decoration-color: #231F20; }
+figcaption,
+.wp-element-caption,
+.rq-caption { color: #231F20; }
+.site-footer.rq-footer-azul a { color: #FFFFFF; }
+.site-footer.rq-footer-preto a { color: #FFF200; }
+
+/* Especificidade extra — galeria sobre #EAF6FB */
+.rq-gal-item figcaption { color: #231F20 !important; }
+figcaption { color: #231F20; }
+.rq-band p, .rq-band a { color: #231F20 !important; }
+footer.has-azul-background-color a,
+.wp-site-blocks footer a { color: #FFFFFF !important; }

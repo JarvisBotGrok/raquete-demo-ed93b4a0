@@ -2,7 +2,7 @@
 Theme Name: Raquete Child (RASCUNHO)
 Template: twentytwentyfive
 Description: Child theme do site de apresentação do Projeto Raquete para Todos. RASCUNHO — sistema visual IRIS-01 (proposta).
-Version: 0.4.0
+Version: 0.4.2
 License: GNU General Public License v2 or later
 Text Domain: raquete-child
 */
@@ -29,7 +29,7 @@ Text Domain: raquete-child
 .rq-card h3{margin-top:0}
 .rq-ico{display:inline-flex;width:48px;height:48px;border-radius:50%;background:#EAF6FB;align-items:center;justify-content:center;margin-bottom:8px}
 .rq-band{background:#FFF200}
-.rq-band h2,.rq-band p{color:#3775C4}
+.rq-band h2{color:#3775C4}.rq-band p,.rq-band a,.rq-band li{color:#231F20}
 .rq-band .wp-block-button__link{background:#3775C4;color:#fff}
 .rq-fontes{font-size:13px;color:#4A5560;border-top:1px solid #C5E6F2;padding-top:8px;margin-top:24px}
 .rq-fontes a{color:#4A5560}
@@ -47,8 +47,8 @@ main .entry-content>*:first-child{margin-top:0}
 /* v0.2.1 — ajustes pós-captura */
 .wp-site-blocks>*,.entry-content>.alignfull,main .wp-block-post-content>.alignfull{margin-block-start:0!important;margin-block-end:0!important}
 .wp-site-blocks>footer,.wp-site-blocks>.wp-block-template-part{margin-block-start:0!important}
-footer a,.has-azul-background-color a{color:#FFF200}
-footer a:hover{color:#fff}
+footer a,.has-azul-background-color a{color:#FFFFFF}
+footer a:hover{color:#FFFFFF;text-decoration:underline}
 .rq-hero h1{max-width:22ch}
 .rq-header .wp-block-navigation{gap:20px}
 /* v0.3.0 — padrões de bloco (IRIS-02) */
@@ -67,7 +67,7 @@ footer a:hover{color:#fff}
 .rq-gal{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
 .rq-gal-item{margin:0;background:#EAF6FB;border-radius:12px;padding:24px;text-align:center}
 .rq-gal-item img{width:100%;max-width:140px;height:auto;aspect-ratio:1;display:block;margin:0 auto}
-.rq-gal-item figcaption{font:600 15px Inter,sans-serif;color:#3775C4;margin-top:12px}
+.rq-gal-item figcaption{font:600 15px Inter,sans-serif;color:#231F20;margin-top:12px}
 .rq-whyband,.rq-whyband h2,.rq-whyband h3,.rq-whyband p{color:#fff}
 .rq-why{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
 .rq-why-card{display:flex;gap:16px;align-items:flex-start;background:rgba(255,255,255,.08);border-radius:12px;padding:20px}
@@ -76,15 +76,15 @@ footer a:hover{color:#fff}
 .rq-whyband .rq-fontes,.rq-whyband .rq-fontes a{color:#D9E2EC;border-color:rgba(255,255,255,.2)}
 .rq-map{margin:0;max-width:720px}
 .rq-map img{width:100%;height:auto;border-radius:12px;display:block;border:1px solid #C5E6F2}
-.rq-map figcaption{font-size:14px;color:#4A5560;margin-top:8px}.rq-map figcaption a{color:#3775C4}
+.rq-map figcaption{font-size:14px;color:#231F20;margin-top:8px}.rq-map figcaption a{color:#231F20}
 .rq-quotes{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
 .rq-quote{background:#fff;border-radius:12px;border-left:6px solid #3775C4;padding:20px;box-shadow:0 6px 20px rgba(55,117,196,.08)}
 .rq-quote blockquote{margin:0;padding:0;border:0}
 .rq-quote blockquote p{font:400 17px/1.5 Inter,sans-serif;font-style:normal;color:#231F20;margin:0}
-.rq-quote-meta{font-size:14px;color:#4A5560;margin:12px 0 0}.rq-quote-meta a{color:#3775C4;font-weight:600}
+.rq-quote-meta{font-size:14px;color:#4A5560;margin:12px 0 0}.rq-quote-meta a{color:#231F20;font-weight:600}
 .rq-div{line-height:0;padding:8px 0;background:#fff}.rq-div img{width:100%;height:24px;display:block}
 .rq-aviso{background:#EAF6FB;border-left:6px solid #FFF200;padding:16px 20px;border-radius:8px}
-.rq-selo{display:inline-block;background:#FFF200;color:#3775C4;font-weight:600;border-radius:8px;padding:2px 10px;margin-right:8px}
+.rq-selo{display:inline-block;background:#FFF200;color:#231F20;font-weight:600;border-radius:8px;padding:2px 10px;margin-right:8px}
 .rq-hero--art>.alignwide{position:relative}
 .rq-hero-art{display:block;width:100%;max-width:1200px;margin:0 auto;height:auto;border-radius:12px}
 @media (min-width:1000px){.rq-hero--art{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:center;padding-left:max(24px,calc((100% - 1200px)/2));padding-right:max(24px,calc((100% - 1200px)/2))}
@@ -123,3 +123,22 @@ body .rq-hero h1{margin-inline:0}
 .is-style-fill .wp-block-button__link{background:#FFF200;color:#231F20}
 .rq-cta-azul .wp-block-button__link,.rq-band .wp-block-button__link{background:#3775C4;color:#fff}
 footer .rq-selo{background:#FFF200;color:#231F20}
+
+/* IRIS-04: texto corrido/links normais nunca em #3775C4 sobre amarelo ou fundos claros */
+.has-areia-background-color a:not(.wp-element-button),
+.has-azul-claro-background-color a:not(.wp-element-button),
+.has-amarelo-background-color a:not(.wp-element-button),
+.has-areia-background-color p,
+.has-azul-claro-background-color p,
+.has-amarelo-background-color p:not(.rq-hero-tag){color:#231F20}
+.has-areia-background-color h2,
+.has-areia-background-color h3{color:#231F20}
+
+/* IRIS-04 APPEND (após regras do tema) */
+.rq-band p,.rq-band a,.rq-band li,.rq-band .rq-lead{color:#231F20!important}
+.rq-band a{text-decoration-color:#231F20}
+figcaption,.wp-element-caption,.rq-caption{color:#231F20}
+.rq-gal-item figcaption{color:#231F20!important}
+.rq-foto figcaption{color:#231F20}
+footer.has-azul-background-color a,.wp-site-blocks footer a,.has-azul-background-color a{color:#FFFFFF!important}
+footer.has-grafite-background-color a,.rq-footer-preto a{color:#FFF200}
