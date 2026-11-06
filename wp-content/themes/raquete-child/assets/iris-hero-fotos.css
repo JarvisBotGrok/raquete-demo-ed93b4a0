@@ -1,4 +1,4 @@
-/* IRIS-05f — hero: duas fotos no lugar da ilustração da quadra
+/* IRIS-05g — hero: duas fotos no lugar da ilustração da quadra
    (alunos, depois recorte dos adultos em um torneio).
    Carregar depois de style.css e de iris-contraste-faixas.css.
    Não aplicar a animação de .rq-hero-art nestas fotos. */
@@ -68,10 +68,10 @@
   }
 }
 
-/* IRIS-05e: as duas fotos se alternam no mesmo lugar (alunos, depois Guga),
+/* IRIS-05e/05f: as duas fotos se alternam no mesmo lugar (alunos, depois Guga),
    em computador e celular. Ciclo de 12 s: 5 s visível + 1 s de transição.
-   Legenda acompanha a foto. Pausa ao passar o mouse ou focar (WCAG 2.2.2);
-   ANVIL: incluir botão "Pausar/Retomar" que alterna .is-paused no contêiner.
+   Legenda acompanha a foto. 05f: delay -6s na 2ª para a 1ª já visível ao carregar.
+   ANVIL: controles Pausar/Anterior/Próxima.
    Com prefers-reduced-motion, nada se move: as fotos ficam lado a lado (05d). */
 @media (prefers-reduced-motion: no-preference) {
   .rq-hero .rq-hero-fotos,
@@ -91,9 +91,25 @@
     object-fit: cover;
     object-position: center 30%;
   }
-  .rq-hero-fotos:hover figure,
-  .rq-hero-fotos:focus-within figure,
-  .rq-hero-fotos.is-paused figure { animation-play-state: paused; }
+  /* IRIS-05g + BASTION: estados parados mostram só .is-active;
+     reserva first-child se nenhuma figura estiver ativa. */
+  .rq-hero-fotos:is(:hover, :focus-within, .is-paused) figure {
+    animation: none;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .rq-hero-fotos:is(:hover, :focus-within, .is-paused) figure:first-child {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .rq-hero-fotos:is(:hover, :focus-within, .is-paused) figure.is-active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .rq-hero-fotos:is(:hover, :focus-within, .is-paused):has(figure.is-active) figure:first-child:not(.is-active) {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 @keyframes rq-foto-alterna {
   0%   { opacity: 1; }
@@ -103,8 +119,7 @@
   100% { opacity: 1; }
 }
 
-/* Controles Pausar / Anterior / Próxima (ANVIL + complemento IRIS).
-   Em modo manual (.is-paused), só .is-active fica visível. */
+/* Controles Pausar / Anterior / Próxima (ANVIL + complemento IRIS). */
 .rq-hero-fotos__controles {
   display: flex;
   flex-wrap: wrap;
@@ -141,18 +156,6 @@
 .rq-hero-fotos__controles button[aria-pressed="true"] {
   background: #FFFFFF;
   color: #3775C4;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .rq-hero-fotos.is-paused figure {
-    animation: none;
-    opacity: 0;
-    pointer-events: none;
-  }
-  .rq-hero-fotos.is-paused figure.is-active {
-    opacity: 1;
-    pointer-events: auto;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
