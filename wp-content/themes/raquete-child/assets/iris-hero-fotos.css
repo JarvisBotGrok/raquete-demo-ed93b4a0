@@ -1,4 +1,4 @@
-/* IRIS-05e — hero: duas fotos no lugar da ilustração da quadra
+/* IRIS-05f — hero: duas fotos no lugar da ilustração da quadra
    (alunos, depois recorte dos adultos em um torneio).
    Carregar depois de style.css e de iris-contraste-faixas.css.
    Não aplicar a animação de .rq-hero-art nestas fotos. */
@@ -84,7 +84,7 @@
     opacity: 0;
     animation: rq-foto-alterna 12s infinite;
   }
-  .rq-hero-fotos figure:nth-child(2) { animation-delay: 6s; }
+  .rq-hero-fotos figure:nth-child(2) { animation-delay: -6s; } /* 05f: 1ª foto já visível ao carregar */
   .rq-hero-fotos img,
   .rq-hero--art .rq-hero-fotos img {
     aspect-ratio: 4 / 3;
@@ -96,11 +96,11 @@
   .rq-hero-fotos.is-paused figure { animation-play-state: paused; }
 }
 @keyframes rq-foto-alterna {
-  0%   { opacity: 0; }
-  8%   { opacity: 1; }
-  50%  { opacity: 1; }
-  58%  { opacity: 0; }
-  100% { opacity: 0; }
+  0%   { opacity: 1; }
+  42%  { opacity: 1; }
+  50%  { opacity: 0; }
+  92%  { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 /* Controles Pausar / Anterior / Próxima (ANVIL + complemento IRIS).
@@ -144,7 +144,6 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  /* Modo manual: para a animação e mostra só a figura ativa. */
   .rq-hero-fotos.is-paused figure {
     animation: none;
     opacity: 0;
