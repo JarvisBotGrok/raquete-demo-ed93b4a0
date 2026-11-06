@@ -1,4 +1,4 @@
-/* IRIS-05d — hero: duas fotos no lugar da ilustração da quadra
+/* IRIS-05e — hero: duas fotos no lugar da ilustração da quadra
    (alunos, depois recorte dos adultos em um torneio).
    Carregar depois de style.css e de iris-contraste-faixas.css.
    Não aplicar a animação de .rq-hero-art nestas fotos. */
@@ -66,4 +66,96 @@
     margin-top: 24px;
     padding: 0 4px;
   }
+}
+
+/* IRIS-05e: as duas fotos se alternam no mesmo lugar (alunos, depois Guga),
+   em computador e celular. Ciclo de 12 s: 5 s visível + 1 s de transição.
+   Legenda acompanha a foto. Pausa ao passar o mouse ou focar (WCAG 2.2.2);
+   ANVIL: incluir botão "Pausar/Retomar" que alterna .is-paused no contêiner.
+   Com prefers-reduced-motion, nada se move: as fotos ficam lado a lado (05d). */
+@media (prefers-reduced-motion: no-preference) {
+  .rq-hero .rq-hero-fotos,
+  .rq-hero--art .rq-hero-fotos {
+    grid-template-columns: 1fr;
+    max-width: 520px;
+  }
+  .rq-hero-fotos figure {
+    grid-area: 1 / 1;
+    opacity: 0;
+    animation: rq-foto-alterna 12s infinite;
+  }
+  .rq-hero-fotos figure:nth-child(2) { animation-delay: 6s; }
+  .rq-hero-fotos img,
+  .rq-hero--art .rq-hero-fotos img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center 30%;
+  }
+  .rq-hero-fotos:hover figure,
+  .rq-hero-fotos:focus-within figure,
+  .rq-hero-fotos.is-paused figure { animation-play-state: paused; }
+}
+@keyframes rq-foto-alterna {
+  0%   { opacity: 0; }
+  8%   { opacity: 1; }
+  50%  { opacity: 1; }
+  58%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* Controles Pausar / Anterior / Próxima (ANVIL + complemento IRIS).
+   Em modo manual (.is-paused), só .is-active fica visível. */
+.rq-hero-fotos__controles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  grid-column: 1 / -1;
+}
+.rq-hero-fotos__controles button {
+  box-sizing: border-box;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 8px 14px;
+  margin: 0;
+  border: 2px solid #FFFFFF;
+  border-radius: 8px;
+  background: transparent;
+  color: #FFFFFF;
+  font: 600 14px/1.2 Inter, system-ui, sans-serif;
+  cursor: pointer;
+}
+.rq-hero-fotos__controles button:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+.rq-hero-fotos__controles button:focus {
+  outline: none;
+}
+.rq-hero-fotos__controles button:focus-visible {
+  outline: 3px solid #FFFFFF;
+  outline-offset: 3px;
+  background: rgba(255, 255, 255, 0.18);
+}
+.rq-hero-fotos__controles button[aria-pressed="true"] {
+  background: #FFFFFF;
+  color: #3775C4;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* Modo manual: para a animação e mostra só a figura ativa. */
+  .rq-hero-fotos.is-paused figure {
+    animation: none;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .rq-hero-fotos.is-paused figure.is-active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rq-hero-fotos__controles { display: none; }
 }
